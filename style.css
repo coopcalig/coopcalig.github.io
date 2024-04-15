@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    background: #353333;
+}
+
+/* Estilos para el "bocadillo" */
+.navbar-container {
+    padding: 30px 20px;
+    background-color: #022405;
+    box-shadow: 0 0 5px #14fd2c,
+        0 0 25px #14fd2c;
+    /* Ajustar el relleno según sea necesario */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    color: #14fd2c;
+    background-color: #000000;
+    padding: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #14fd2c,
+        0 0 25px #14fd2c;
+    border-radius: 20px;
+    /* Reducir el margen derecho */
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-right: 8px;
+    transition: all 300ms ease;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.navbar ul li:hover a {
+    color: #ffffff;
+    padding: 10px;
+    transform: scale(1.2);
+    box-shadow: 0 0 5px #14fd2c,
+        0 0 25px #14fd2c, 0 0 50px #14fd2c, 0 0 100px #14fd2c, 0 0 200px #14fd2c;
+    border-radius: 20px;
+    font-weight: 480;
+}
+
+.navbar .selected {
+    color: #79f486;
+    padding: 10px;
+    box-shadow: 0 0 20px #5ce16a,
+        0 0 30px #14fd2c;
+    font-weight: 600;
+
+}
+
+
+/* Home */
+
+.hire-btn {
+    margin-top: 20px;
+    color: #ffffff;
+    background: #000000;
+    padding: 10px 50px;
+    font-weight: 650;
+    cursor: pointer;
+    border-radius: 13px;
+    transition: all 300ms ease;
+    box-shadow: 0 0 10px #14fd2c,
+        0 0 10px #14fd2c;
+}
+
+.hire-btn:hover {
+    border-radius: 8px;
+    box-shadow: 0 0 5px #14fd2c,
+        0 0 25px #14fd2c, 0 0 50px #14fd2c, 0 0 100px #14fd2c;
+}
+
+.main {
+    padding-top: 70px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main button {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.main p.subtitle {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.main img {
+    width: 260px;
+    height: 260px;
+    margin: 18px;
+}
+
+.guarantee {
+    margin-top: 80px;
+    padding: 0 20px;
+    /* Reducir el relleno para dispositivos más pequeños */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+    gap: 30px;
+    justify-content: center;
+    /* Centrar los elementos */
+}
+
+
+.guarantee .item {
+    background: #292b2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: calc(30% - 4px);
+    /* 50% de ancho con margen entre elementos */
+    border-radius: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.guarantee .item:hover {
+    border-color: #14fd2c;
+    box-shadow: 0px 0px 20px 10px #14fd2c;
+    border-radius: 10px;
+    width: calc(35% - 20px);
+}
+
+.guarantee .item .icon {
+    width: 80px;
+    height: 80px;
+    background: #5e5f60;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.guarantee .item .icon i {
+    font-size: 40px;
+    color: #14fd2c;
+}
+
+.guarantee .item .info {
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .item .info h3 {
+    color: #14fd2c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.guarantee .item .info p {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.guarantee .item>i {
+    color: #fff;
+    font-size: 30px;
+    transition: color 300ms ease;
+}
+
+.guarantee .item:hover>i {
+    color: #14fd2c;
+}
+
+
+/*Footer*/
+
+footer {
+    top: auto;
+    /* Eliminar la posición fija en la parte superior */
+    bottom: 0;
+    width: 100%;
+    background: #1c1c1c;
+    box-shadow: 0px 0px 45px 5px #14fd2c;
+    padding: 40px 20px 10px;
+    /* Ajustar el padding según sea necesario */
+    margin-top: 70px;
+}
+
+footer .cols {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+    align-items: start;
+}
+
+footer .cols .about-col {
+    flex: 1;
+    /* Ajustar el ancho según sea necesario */
+    font-weight: 450;
+    padding-top: 10px;
+}
+
+footer .cols .about-col h3 {
+    color: #14fd2c;
+    margin-bottom: 10px;
+}
+
+footer .cols .about-col p {
+    color: #d6d1d1;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+footer .cols .links-col {
+    flex: 1;
+    /* Ajustar el ancho según sea necesario */
+    margin-top: 20px;
+    /* Añadir un margen superior */
+}
+
+footer .cols .links-col .selected {
+    color: #03ddff;
+}
+
+footer .cols .links-col h4,
+footer .cols .news-col h4 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer .cols .links-col a {
+    color: #979292;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 3px;
+    display: block;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+footer .cols .links-col a:hover {
+    color: #14fd2c;
+}
+
+
+
+/* Tienda*/
+
+.seprator {
+    margin: 80px 20px;
+    /* Ajustar el margen según sea necesario */
+    padding: 30px 20px;
+    /* Ajustar el padding según sea necesario */
+    background: rgba(0, 0, 0, 0.843);
+    display: flex;
+    flex-direction: row;
+    /* Cambiar la dirección del flexbox a columna en dispositivos más pequeños */
+    justify-content: space-between;
+    align-items: center;
+    color: #14fd2c;
+    border-radius: 12px;
+}
+
+.seprator h3 {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.seprator i {
+    font-size: 30px;
+    margin-top: 20px;
+    /* Agregar un margen superior */
+}
+
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 3%;
+    /* Ajusta el margen según sea necesario */
+}
+
+.about .info {
+    background-color: #000000;
+    box-shadow: 10px 10px 10px #13a322,
+        0 0 60px #14fd2c;
+    border-radius: 25px;
+    transition: all 100ms ease-in;
+    height: 520px;
+    /* Cambiar la altura a automático para que se ajuste según el contenido */
+    max-width: 300px;
+    /* Establecer un ancho máximo para que no se desborde en pantallas más grandes */
+    width: 100%;
+    /* Para ocupar todo el ancho disponible */
+    margin-bottom: 30px;
+    /* Agregar margen inferior entre elementos */
+}
+
+.about .info:hover {
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px #14fd2c,
+        0 0 50px #14fd2c, 0 0 80px #14fd2c;
+    transform: scale(1.08);
+}
+
+.about .info img {
+    width: 60%;
+    /* Hacer que la imagen ocupe todo el ancho disponible */
+    height: auto;
+    /* Permitir que la altura se ajuste proporcionalmente */
+    margin: 35px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.about .info h3 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.about h3 {
+    color: #ffffff;
+    font-size: 26px;
+    padding: 20px;
+    margin: 0px 10px;
+    /* Ajusta el margen según sea necesario */
+}
+
+
+
+/*Acerca De*/
+
+.description {
+    *margin-top: -5%;
+    /* Ajusta el margen según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* Esto es opcional, ajusta la altura del contenedor según tu diseño */
+
+}
+
+
+.description .info img {
+    width: 150px;
+    /* Hacer que la imagen ocupe todo el ancho disponible */
+    height: 150px;
+    /* Permitir que la altura se ajuste proporcionalmente */
+    margin: 35px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.description .info h3 {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    /* Ajusta el margen según sea necesario */
+}
+
+.description .info .hire-btn {
+    margin: 4%;
+    text-align: justify;
+    padding: 30px;
+}
+
+/*Contacto*/
+
+
+.Horario {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 10%;
+    /* Ajusta el margen según sea necesario */
+    color: #fff;
+}
+
+.Horario .info {
+    background-color: #000000;
+    box-shadow: 10px 10px 10px #13a322,
+        0 0 60px #14fd2c;
+    border-radius: 25px;
+    transition: all 100ms ease-in;
+    height: 500px;
+    /* Cambiar la altura a automático para que se ajuste según el contenido */
+    max-width: 390px;
+    /* Establecer un ancho máximo para que no se desborde en pantallas más grandes */
+    width: 100%;
+    /* Para ocupar todo el ancho disponible */
+    margin-bottom: 30px;
+    /* Agregar margen inferior entre elementos */
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Horario .info:hover {
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px #14fd2c,
+        0 0 50px #14fd2c, 0 0 80px #14fd2c;
+    transform: scale(1.08);
+
+}
+
+
+.Horario h3 {
+    color: #ffffff;
+    font-size: 26px;
+    padding: 20px;
+    margin: 0px 20px;
+    /* Ajusta el margen según sea necesario */
+}
+
+
+
+
+/*Localidad*/
+
+
+/*Responsive Pantalla*/
+
+/* Media queries para hacer el navbar responsive */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        background-color: #000000;
+        padding: 10px 10px;
+        /* Ajustar el relleno según sea necesario */
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 7px #14fd2c;
+        margin: 10px;
+        /* Ajustar el margen según sea necesario */
+    }
+
+    .navbar {
+        flex-direction: column;
+        /* Cambiar la dirección del flexbox a columna en dispositivos más pequeños */
+        align-items: center;
+        /* Centrar elementos */
+        padding: 30px 0;
+        /* Ajustar el relleno */
+    }
+
+    .navbar h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+        /* Agregar un margen inferior */
+        text-align: center;
+        /* Centrar el texto */
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navbar ul li {
+        margin-bottom: 20px;
+        /* Agregar un margen inferior entre elementos */
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .navbar ul li:last-child {
+        margin-bottom: 0;
+        /* Eliminar el margen inferior del último elemento */
+    }
+
+    .seprator {
+        flex-direction: row;
+        /* Volver a la dirección del flexbox a fila en dispositivos más grandes */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .seprator i {
+        margin-top: 0;
+        /* Eliminar el margen superior */
+    }
+
+    .about {
+        flex-direction: column;
+        /* Cambiar la dirección del flexbox a columna en dispositivos más pequeños */
+        align-items: stretch;
+        /* Estirar los elementos para que ocupen todo el ancho */
+    }
+
+    .about .info {
+        max-width: 335px;
+        height: 525px;
+        /* Eliminar el ancho máximo para que el elemento se expanda completamente */
+        margin-left: 8%;
+        margin-right: 10%;
+    }
+
+
+
+    footer .cols .about-col,
+    footer .cols .links-col {
+        flex: 100%;
+        /* Cambiar a ancho completo para que los elementos se apilen en dispositivos más pequeños */
+    }
+
+
+}
+
+
+/* Media queries para dispositivos más pequeños */
+@media screen and (max-width: 1148px) {
+    .guarantee .item {
+        width: calc(100% - 20px);
+        box-shadow: 0px 0px 10px 5px #14fd2c;
+        /* 100% de ancho con margen entre elementos */
+    }
+
+    .guarantee .item:hover {
+        border-color: #14fd2c;
+        box-shadow: 0px 0px 20px 10px #14fd2c;
+        border-radius: 50px;
+        width: calc(100% - 2px);
+    }
+}
