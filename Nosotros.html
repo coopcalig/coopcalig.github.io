@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sobre la Cooperativa La Unión: historia, misión y contacto." />
+
+  <!-- Title & Favicon -->
+  <title>Cooperativa La Unión — Nosotros</title>
+  <link rel="icon" href="img/logo.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page page-about">
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+  <header class="site-header container-lg">
+    <div class="brand-row">
+
+      <div class="brand">
+        <img src="img/2.png" alt="Logo Cooperativa" class="logo" />
+        <div class="brand-text">
+          <strong>Cooperativa La Unión</strong>
+          <small class="tagline">Aceite de Oliva Virgen</small>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Tienda.html">Tienda</a></li>
+          <li><a href="Nosotros.html" class="active">Nosotros</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+  <main class="container-lg">
+
+    <!-- Historia -->
+    <section class="seprator card animate-fade-up">
+      <h2>Nuestra historia</h2>
+      <p class="muted">
+        Pequeña cooperativa con raíces profundas en la tradición olivera de la región.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section class="about grid animate-fade-up delay-1">
+      <div class="about-card card-hover">
+
+        <div class="media-figure small">
+          <img src="img/2.png" alt="Olivares" class="img-cover" />
+        </div>
+
+        <div class="about-body">
+          <h3>Compromiso con la tierra</h3>
+          <p>
+            Gestionamos nuestros olivares con prácticas sostenibles. Cada oliva se recoge
+            en su punto óptimo para garantizar un aceite de alta calidad y sabor auténtico.
+          </p>
+          <p>
+            <strong>Misión:</strong> Ofrecer un producto local, saludable y con identidad.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contacto Oficina -->
+    <section class="Contacto grid animate-fade-up delay-2">
+
+      <div class="card card-hover contact-card">
+        <h3>Contacto de oficina</h3>
+        <p>
+          Teléfono:
+          <a class="btn small" href="tel:+34621623009">+34 621 62 30 09</a>
+        </p>
+        <p>
+          Email:
+          <a class="btn small" href="mailto:coopcalig@gmail.com">coopcalig@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="card card-hover contact-card">
+        <h3>Horario Oficina</h3>
+        <p>Mañana: 08:00 — 13:00</p>
+        <p>Tarde: 16:00 — 19:00</p>
+      </div>
+
+    </section>
+
+    <!-- Horario Tienda / Localización -->
+    <section class="Contacto grid animate-fade-up delay-2">
+
+      <div class="card card-hover contact-card">
+        <h3>Horario Tienda</h3>
+        <p>Mañana:</p>
+        <p style="margin-left: 5px;">
+          08:00 — 09:30 <br />
+          12:00 — 13:00
+        </p>
+        <p>Tarde: 16:00 — 19:00</p>
+      </div>
+
+      <div class="card card-hover contact-card">
+        <h3>Localización</h3>
+        <p>Plaça Ramon Y Cajal — Cálig</p>
+        <a
+          class="btn small"
+          href="https://maps.app.goo.gl/18zZYyiB4rUmoreP6"
+          target="_blank"
+          rel="noopener"
+        >
+          Ver en Google Maps
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="site-footer">
+    <div class="container-lg footer-grid">
+
+      <div class="footer-brand">
+        <img src="img/2.png" alt="Logo" class="logo-small" />
+        <p class="muted">
+          Cooperativa Agraria La Unión — Aceite de Oliva Virgen
+        </p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>Tel: <a href="tel:+34621623009">+34 621 62 30 09</a></p>
+        <p>Email: <a href="mailto:coopcalig@gmail.com">coopcalig@gmail.com</a></p>
+      </div>
+
+      <div class="footer-legal">
+        <h4>Información</h4>
+        <p class="muted small">
+          Cooperativa La Unión © 2024- <span id="year-nosotros"></span>
+        </p>
+        <p class="muted small">Diseñador Web © Mourad Jadiani</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Year Script -->
+  <script>
+    document.getElementById('year-nosotros').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
